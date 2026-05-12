@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background: #050505;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #050505;
+    color: #F0EDE8;
+    overflow-x: hidden;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    * {
+      cursor: none !important;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

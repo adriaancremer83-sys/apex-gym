@@ -1,0 +1,57 @@
+Fix these specific issues in the APEX website:
+
+ISSUE 1 — COACHES MISMATCH
+Change the coach names and specialties to match 
+the Unsplash images being used:
+
+Coach 1 (Asian male): 
+Name: "Jin-Ho Park"
+Title: "Strength & Olympic Lifting"
+
+Coach 2 (Female):
+Name: "Sarah Mitchell"  
+Title: "Conditioning & Mobility"
+
+Coach 3 (Black male):
+Name: "Themba Ndlovu"
+Title: "Combat & Functional Training"
+
+ISSUE 2 — HERO TRANSFORMATION
+The hero must not be static. Replace it with this:
+
+Split the hero into 3 scroll-driven scenes using 
+GSAP ScrollTrigger timeline:
+
+Scene 1 (0-33% scroll): 
+- Close up extreme crop on hands gripping a barbell
+- Text fades in: "IT STARTS" then "WITH GRIP."
+- Camera slowly zooms in (scale 1 to 1.08)
+
+Scene 2 (33-66% scroll):
+- Cross fade to athlete doing pull-ups, 
+  arms fully extended, back muscles visible
+- Previous text fades out
+- New text: "BUILT" animates in from left
+  "DIFFERENT." slams in from right
+
+Scene 3 (66-100% scroll):
+- Cross fade to full gym wide shot, 
+  athletes training in background
+- Text: "APEX." fades in centered, 
+  massive Bebas Neue, gold color
+- Subtext slides up: 
+  "Sandton's most elite training facility"
+- CTA button pulses into view
+
+Each transition: 
+- Smooth crossfade between images
+- Text exits with blur + fade
+- New text enters with slight scale from 0.95 to 1
+- Pin the entire hero section during scroll
+- Needs approx 300vh of scroll height 
+  to play through all 3 scenes
+
+GSAP timeline with scrub: 1
+
+This creates the cinematic effect of 
+the camera telling a story as you scroll.

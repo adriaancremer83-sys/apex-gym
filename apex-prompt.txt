@@ -1,0 +1,230 @@
+You are a world-class senior frontend engineer and 
+creative director.
+
+Build a VIRAL-WORTHY, jaw-dropping website for a 
+fictional premium fitness studio called APEX.
+
+Tagline: "Where Champions Are Forged."
+Location: Sandton, Johannesburg
+
+This must look like Nike + Equinox + Apple had a baby.
+When someone screen records this scrolling, 
+it must make people stop and say "who built that?"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TECH STACK — NON NEGOTIABLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Next.js 14 App Router
+- TypeScript
+- Tailwind CSS
+- Framer Motion (ALL animations)
+- GSAP + ScrollTrigger (scroll choreography)
+- DO NOT convert to HTML at any point
+- Deploy-ready build
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DESIGN LANGUAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Colors:
+- Background: #050505 pure black ONLY
+- Gold accent: #C8890D
+- White: #F0EDE8
+- Dark surface: #0d0d0d
+
+Typography:
+- Headings: Bebas Neue (massive, bold, uppercase)
+- Subheadings: Cormorant Garamond (elegant italic)
+- Body: Inter
+
+Aesthetic:
+- Cinematic dark luxury
+- High contrast
+- Raw energy meets premium polish
+- Think: ESPN Body Issue meets Architectural Digest
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1 — HERO (Full viewport)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Full screen dark background
+- Large real athlete Unsplash image 
+  (dark, dramatic, high contrast)
+- GSAP horizontal text scroll behind the image:
+  "STRENGTH · POWER · ENDURANCE · APEX ·" 
+  scrolling slowly left to right
+- Main headline stacked large:
+  "BUILT" (white, massive Bebas Neue)
+  "DIFFERENT." (gold, massive Bebas Neue)
+- Subline in Cormorant italic:
+  "Sandton's most elite training facility."
+- Framer Motion entrance: 
+  headline slides up with stagger on load
+- Animated scroll indicator
+- Floating nav: transparent until scroll, 
+  then black with blur backdrop
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2 — STATS (Horizontal scroll pin)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Use GSAP ScrollTrigger to PIN this section.
+As user scrolls DOWN, content moves HORIZONTALLY.
+
+4 stat panels slide in from right:
+Panel 1: "2,400" — "Members"
+Panel 2: "38" — "Elite Coaches"  
+Panel 3: "6AM–11PM" — "Open Daily"
+Panel 4: "0" — "Excuses Tolerated"
+
+Each panel: full screen height, dark background,
+massive number in gold Bebas Neue,
+label in small caps white below.
+
+This horizontal scroll section is what makes 
+people stop scrolling on social media.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3 — PROGRAMS (Stagger reveal)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6 program cards in a 2x3 grid:
+- APEX Strength
+- APEX Conditioning  
+- Combat Training
+- Olympic Lifting
+- Recovery & Mobility
+- Personal Coaching
+
+Each card:
+- Dark image background (Unsplash athlete photos)
+- Title in Bebas Neue
+- Short description
+- GSAP ScrollTrigger: cards animate in 
+  with stagger — each one slides up 
+  and fades in 0.15s apart
+- On hover: image scales 1.05, 
+  gold border appears at bottom,
+  title slides up slightly
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4 — MANIFESTO (Scroll scrub text)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+This is the most cinematic section.
+
+Large paragraph text that HIGHLIGHTS word by word 
+as the user scrolls — exactly like the 
+Apple iPhone product pages.
+
+Text:
+"At APEX we don't believe in average.
+We believe in showing up before the sun rises.
+In pushing past the point where most people stop.
+In building a body and a mind that nothing can break.
+This is not a gym. This is a standard."
+
+Implementation:
+- Split text into individual word spans
+- GSAP ScrollTrigger scrub
+- Each word goes from opacity 0.15 (grey) 
+  to opacity 1 (white) as scroll progresses
+- Gold highlight on current word
+- Background: pure black, nothing else
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5 — COACHES (Horizontal cards)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3 elite coach profiles:
+- Marcus "The Standard" Dlamini — Strength & Conditioning
+- Lerato Khumalo — Olympic Weightlifting
+- Jaco van der Berg — Combat & Conditioning
+
+Each card:
+- Dark portrait image (Unsplash)
+- Name in Bebas Neue
+- Specialty in Cormorant italic gold
+- 2-line bio
+- Framer Motion: card tilts slightly 
+  on mouse move (useMotionValue + useTransform)
+  — the 3D card tilt effect
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 6 — MEMBERSHIP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3 tier cards:
+- APEX Essential — R899/month
+- APEX Pro — R1,499/month  
+- APEX Elite — R2,200/month
+
+Middle card (Pro) is featured:
+- Slightly larger
+- Gold border
+- "MOST POPULAR" badge
+- Framer Motion: featured card 
+  animates up on scroll entrance
+
+Each card lists 5-6 features with 
+gold checkmarks.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 7 — CTA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Full viewport dark section.
+Massive Bebas Neue text:
+"YOUR FIRST SESSION" (white)
+"IS FREE." (gold)
+
+Subtext in Cormorant italic:
+"No contracts. No excuses. Just results."
+
+Large gold CTA button with shimmer 
+animation on hover.
+
+GSAP: text reveals letter by letter 
+from blur to sharp as section enters viewport.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CURSOR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Custom cursor on desktop:
+- Small gold dot that follows mouse
+- Larger gold ring that follows with 
+  spring physics lag behind
+- On hover over buttons/links: 
+  ring expands and changes to outline
+- Implemented with Framer Motion 
+  useMotionValue and spring
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MOBILE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Fully responsive.
+Horizontal scroll section becomes 
+vertical on mobile.
+Touch-friendly interactions.
+Hamburger menu with full screen 
+overlay nav.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PERFORMANCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- next/image for all images
+- Dynamic imports for GSAP
+- Reduce motion media query respected
+- Smooth 60fps target on all animations
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+THE NON-NEGOTIABLES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. The horizontal scroll pin section MUST work
+2. The word-by-word scroll scrub MUST work  
+3. The 3D card tilt on coaches MUST work
+4. Custom cursor MUST work on desktop
+5. Pure black backgrounds throughout — 
+   NOT navy, NOT dark blue, PURE #050505
+
+If any of these 5 fail — fix them before 
+considering the build complete.
+
+This is a portfolio piece for Forge Systems.
+When screen recorded and posted on Facebook 
+it must make people say 
+"I need whoever built that."
+
+Build it. Don't ask questions.
