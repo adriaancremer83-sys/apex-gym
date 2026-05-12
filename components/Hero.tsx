@@ -2,7 +2,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Image from "next/image";
 
 const SCENE_IMAGES = [
   "/videos/hero1.mp4",
